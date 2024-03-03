@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+.wrap .topper {
+  background-image: url("/assets/images/background-pattern-desktop.svg");
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+@media (max-width: 375px) {
+  .wrap .topper {
+    background-image: url("/assets/images/background-pattern-mobile.svg");
+  }
+}
+.wrap .content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .content .inner {
+  width: 500px;
+  min-height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px 40px;
+}
+@media (max-width: 375px) {
+  .wrap .content .inner {
+    width: 250px;
+  }
+}
+.wrap .content .inner .title h2 {
+  vertical-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 5px;
+}
+.wrap .content .inner .title h2 img {
+  margin-right: 8px;
+}
+@media (max-width: 375px) {
+  .wrap .content .inner .title h2 {
+    font-size: 35px;
+    font-weight: 900;
+    font-family: "Work Sans", sans-serif;
+  }
+}
+.wrap .content .inner .title h2 img {
+  width: 30px;
+}
+@media (max-width: 375px) {
+  .wrap .content .inner .txt {
+    margin-top: -35px;
+  }
+}
+.wrap .content .inner .txt .question {
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+.wrap .content .inner .txt .question div {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.wrap .content .inner .txt .question div h6 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+  vertical-align: middle;
+}
+.wrap .content .inner .txt .question div button {
+  padding: 0;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .wrap .content .inner .txt .question div button {
+    margin-left: 5px;
+  }
+}
+.wrap .content .inner .txt .question div:hover {
+  color: hsl(292, 42%, 14%);
+}
+.wrap .content .inner .txt .question p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+  margin-top: -5px;
+  color: hsl(292, 16%, 49%);
+  display: none;
+}/*# sourceMappingURL=style.css.map */
